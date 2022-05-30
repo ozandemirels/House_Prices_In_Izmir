@@ -8,7 +8,7 @@ page = 1
 house_list = []
 
 def house_infos():
-    for page in range(1, 5):
+    for page in range(1, 500):
         if page == 1:
             url = 'https://www.hepsiemlak.com/izmir-satilik'
         elif page != 1:
@@ -47,7 +47,7 @@ def house_infos():
 
 while True:
     house_infos()
-    time.sleep(5 * 60)
+    time.sleep(60*60*24)
 
 
 
